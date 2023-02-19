@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "console": "integratedTerminal",
-            "program": "${workspaceFolder}\\aula-02(Implementação com abordagens procedurais)\\app.js"
+            "program": "${workspaceFolder}\\aula-04(modularização e importações)\\app.js"
         }
     ]
 }
