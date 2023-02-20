@@ -28,14 +28,6 @@ function fnCapitalizarNovo(colecao){
     
 }
 
-
-function fnOrdenarNovo(colecao) {
-    return colecao.nome.sort((a,b)=>{
-        return a.localeCompare(b) // considera caracteres latinos com acentuação
-    })
-    
-}
-
 function fnOrdenar(vetor) {
     return vetor.sort((a,b)=>{
         return a.localeCompare(b) // considera caracteres latinos com acentuação
