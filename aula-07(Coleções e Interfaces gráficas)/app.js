@@ -4,4 +4,6 @@ import ingredientes from './ingredientes.js'
 
 // let inredientesOrdenados = modificador.ordenar(ingredientes, 'nome')
 
-console.log(modificador.capitalizar(ingredientes, 'nome'))
+// let ingredientes = ['mel','água', 'sal', 'mostarda']
+
+console.log(modificador.ordenar(ingredientes, 'nome'))

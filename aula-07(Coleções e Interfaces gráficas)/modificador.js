@@ -10,18 +10,21 @@ function fnCapitalizar(colecao, attr){
     }
 }
 
-function fnOrdenar(colecao, attr){    
-    return attr ?
-        colecao.sort(function(a,b){
-            return typeof a[attr] == 'number' ?
-                a[attr] - b[attr] :
-                a[attr].localeCompare(b[attr])
-        }):
-        colecao.sort(function(a,b){
-            return typeof a == 'number' ?
-                a - b :
-                a.localeCompare(b)
-        });
+
+function fnOrdenar(colecao, attr){   
+
+    return attr && (attr in colecao[0])?
+    colecao.sort(function(a,b){
+
+        return typeof a[attr] == 'number' ?
+            a[attr] - b[attr] :
+            a[attr].localeCompare(b[attr])
+    }): !(attr) ? 
+    colecao.sort(function(a,b){
+        return typeof a == 'number' ?
+            a - b :
+            a.localeCompare(b)
+    }) : console.log('Parâmetro não encontrado')
 }
 
 function fnCaixaAlta(colecao, attr){
