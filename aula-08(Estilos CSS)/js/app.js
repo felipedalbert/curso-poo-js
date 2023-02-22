@@ -15,11 +15,3 @@ for(let ingredientes of ingredientesCapitalizadosOrdenados){
     `
     containerIngredientes.innerHTML += textoHtml
 }
-
-
-
-
-
-
-
-
