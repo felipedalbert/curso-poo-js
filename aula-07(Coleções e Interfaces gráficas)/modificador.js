@@ -7,15 +7,13 @@ function fnCapitalizar(colecao, attr){
         }
         
         return colecao;
-    }
+    } else console.log('Lista vazia')
 }
 
 
 function fnOrdenar(colecao, attr){   
-
     return attr && (attr in colecao[0])?
     colecao.sort(function(a,b){
-
         return typeof a[attr] == 'number' ?
             a[attr] - b[attr] :
             a[attr].localeCompare(b[attr])
@@ -36,7 +34,7 @@ function fnCaixaAlta(colecao, attr){
         }
         
         return colecao;
-    }
+    }else console.log('Lista vazia')
 }
 
 
