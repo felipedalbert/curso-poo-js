@@ -8,18 +8,94 @@ html, body{
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    display: flex;
+    background-color: rgb(247, 247, 247);
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: transparent /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: rgb(66, 88, 64);    /* color of the scroll thumb */
+border-radius: 5px;       /* roundness of the scroll thumb */
+
+}
+
 h2{
-    margin: 4rem 0;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
     text-align: center;
+    color: rgb(127, 142, 129);
+    letter-spacing: 3px;
+    margin-left: 3px;
+}
+
+.header-group{
+    background-color: rgb(228, 233, 217);
+    padding: 1.5rem;
+    box-shadow: rgba(78, 84, 78, 0.222) 0px 10px 10px -10px;
+    margin-bottom: 5px;
+}
+
+.filter{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.filter .select-box{
+    width: fit-content;
+    position: relative;
+}
+
+.filter select{
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    width: 200px;
+    border-radius: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    appearance: none;
+    position: relative;
+    background-color: rgb(238, 247, 239);
+    color: rgb(62, 83, 52);
+}
+
+.filter select:hover{
+    border: 1px solid rgb(43, 67, 43);
+}
+
+.filter select:focus{
+    outline: none;
+    border: 1px solid currentColor;
+}
+
+.filter i{
+    font-size: .8rem;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18px;
+    color:  rgb(62, 83, 52);
 }
 
 .ingrediente{
     display: flex;
     align-items: center;
     column-gap: 1.2rem;
-    border-bottom: solid 1px #00000013;
-    padding: 2rem;
+    border-bottom: solid 1.2px #00000013;
+    padding: 1.6rem;
+    background-color: rgb(244, 244, 243);
+    border-left: solid 7px rgb(53, 77, 53);
+    margin-bottom: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .ingrediente img{

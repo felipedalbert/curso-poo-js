@@ -26,7 +26,6 @@ function fnFiltroPorLetra(letra, ingredientes){
 }
 
 
-
 function fnIteradorDeContudo(itensFiltrados){
     let containerIngredientes = document.getElementById('container-ingredientes')
     containerIngredientes.innerHTML = ''
