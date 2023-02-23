@@ -34,10 +34,10 @@ h2{
     text-align: center;
     color: rgb(127, 142, 129);
     letter-spacing: 3px;
-    margin-left: 3px;
 }
 
 .header-group{
+    width: 100vw;
     background-color: rgb(228, 233, 217);
     padding: 1.5rem;
     box-shadow: rgba(78, 84, 78, 0.222) 0px 10px 10px -10px;
@@ -45,7 +45,6 @@ h2{
 }
 
 .filter{
-    width: 100vw;
     display: flex;
     justify-content: center;
     position: relative;
@@ -65,6 +64,7 @@ h2{
     position: relative;
     background-color: rgb(238, 247, 239);
     color: rgb(62, 83, 52);
+    cursor: pointer;
 }
 
 .filter select:hover{
@@ -84,6 +84,7 @@ h2{
     transform: translateY(-50%);
     right: 18px;
     color:  rgb(62, 83, 52);
+    cursor: pointer;
 }
 
 .ingrediente{
