@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html, body{
+html{
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -36,26 +36,29 @@ h2{
     letter-spacing: 3px;
 }
 
-.header-group{
+.container{
     width: 100vw;
+}
+
+.container .header-group{
+    width: 100%;
     background-color: rgb(228, 233, 217);
     padding: 1.5rem;
     box-shadow: rgba(78, 84, 78, 0.222) 0px 10px 10px -10px;
     margin-bottom: 5px;
 }
 
-.filter{
+.container .header-group .filter{
     display: flex;
     justify-content: center;
-    position: relative;
 }
 
-.filter .select-box{
+.container .header-group .filter .select-box{
     width: fit-content;
     position: relative;
 }
 
-.filter select{
+.container .header-group .filter .select-box select{
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     width: 200px;
     border-radius: 50px;
@@ -67,16 +70,16 @@ h2{
     cursor: pointer;
 }
 
-.filter select:hover{
+.container .header-group .filter .select-box select:hover{
     border: 1px solid rgb(43, 67, 43);
 }
 
-.filter select:focus{
+.container .header-group .filter .select-box select:focus{
     outline: none;
     border: 1px solid currentColor;
 }
 
-.filter i{
+.container .header-group .filter .select-box i{
     font-size: .8rem;
     color: #000;
     position: absolute;
@@ -89,7 +92,7 @@ h2{
     pointer-events: none;
 }
 
-.ingrediente{
+.container .ingrediente{
     display: flex;
     align-items: center;
     column-gap: 1.2rem;
@@ -101,6 +104,6 @@ h2{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.ingrediente img{
+.container .ingrediente img{
     height: 5rem;
 }
