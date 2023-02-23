@@ -20,22 +20,7 @@ function fnGerarOpcoesAlfabeto() {
     }
 }
 
-function fnCaixaAlta(colecao, attr){
-    if (colecao.length > 0){
-        if (typeof colecao[0] == 'object' && attr){
-            colecao.map(item => item[attr] = item[attr].toUpperCase());
-        }else{
-            colecao.map(item => item = item.toUpperCase());
-        }
-        
-        return colecao;
-    }else console.log('Lista vazia')
-}
-
-
-
 export default {
     capitalizar: fnCapitalizar,
     gerarAlfabeto: fnGerarOpcoesAlfabeto,
-    caixaAlta: fnCaixaAlta
 }
